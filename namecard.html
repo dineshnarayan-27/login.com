@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+            body{
+                font-size:15px;
+                font-family: sans-serif;
+                background-color: whitesmoke;
+            }
+            .login{
+                margin-left:15%;
+                max-width:22em;
+                min-width:20em;
+                background-color: white;
+                display:flex;
+                flex-direction: column;               
+                border-radius:1rem;
+                padding:1.5em;
+            }
+            .login label{
+                padding-bottom:5%;
+            
+            }
+            input{
+                width:18em;
+                height: 2.3rem;
+                font-size:1rem;
+                margin-bottom:1em;
+                padding-left:0.5em;
+            }
+            a{
+                font-size:1rem;
+                color:#0972C6;
+                font-weight: bolder;
+                text-decoration: none;
+            }
+            .login button{
+                width:18em;
+                background:#0972C6;
+                color:white;
+                font-size:1rem;
+                border-radius:2rem;
+                margin-top:0.5em;
+                padding-top:0.8em;
+                padding-bottom: 0.8em;
+            }
+            i{
+                padding-right:0.3em;
+            }
+
+        
+            
+        </style>
+    </head>
+    <body>
+        
+        <div class="login">
+            <h1>Sign in</h3>
+            <label>Stay updated on your professional world</label>
+            <input type = "text" placeholder="UserName" id="u">
+            <input type ="text" placeholder="Password" id="p">
+            <a href="#">Forgot password?</a>
+            <button onclick="clickMe()">Sign in</button>
+            <!-- <label>------------or------------</label> -->
+            <button style="background-color:white;color:black;" onclick="clickMe()"><i class="fa-brands fa-apple"></i>Sign in with Apple</button>
+        </div>
+    </body>
+    <script>
+        function clickMe(){
+            var s = document.getElementById("u").value;
+            var p = document.getElementById("p").value;
+            if(s=="dinesh_27" && p =="9154124199@D"){
+                document.write("Demon arrise");
+            }else{
+                alert("Invalid literals");
+            }
+        }
+    </script>
+</html>
